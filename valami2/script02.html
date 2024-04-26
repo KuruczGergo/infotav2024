@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Színezd újra</title>
+    <style>
+        fieldset{
+            width: 10%;
+            background-color: white;
+            color: black;
+        }
+        legend {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+        }
+        body{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Színezd újra!</h1>
+    <form>
+        <fieldset>
+            <legend>Színező</legend>
+            <input type="color" name="data" id="szín" onchange="hatter()" >
+            <label for="szín">Válassz színt!</label>
+        </fieldset>
+    </form>
+
+
+    
+    <script>
+    function hatter() {
+    document.body.style.backgroundColor = szín.value;
+    console.log(szín.value);
+    if (szín.value < "#888888") {
+        document.body.style.color = "white";
+    }
+    else {
+        document.body.style.color = "black";
+    }
+}
+    </script>
+</body>
+</html>

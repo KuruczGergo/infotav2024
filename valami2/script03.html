@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email-jelszó</title>
+    <style>
+        fieldset{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="javascript:letsgo()" >
+        <fieldset>
+            <legend>Adatok</legend>
+            <label for="mail">Adj meg egy emailt címet</label>
+            <input type="email" name="data" id="mail">
+            <br>
+            <label for="pw">Adj meg egyerős jelszót</label>
+            <input type="password" name="data" id="pw">
+            <br>
+            <input type="submit" value="OK">
+        </fieldset>
+    </form>
+
+
+
+    <script>
+        function letsgo() {
+            alert("A jelszó: " + pw.value)
+            localStorage.setItem("email", mail.value)
+            localStorage.setItem("pass", pw.value)
+        }
+    </script>
+
+</body>
+</html>

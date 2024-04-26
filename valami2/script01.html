@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert</title>
+</head>
+<body>
+
+    <h1>JavaScript felugró ablakok</h1>
+
+    <p>Derékszögű háromszög átfogójának számítása</p>
+    <img src="kep.png" alt="">
+    <br>
+    <input type="button" value="átfogó számítása" onclick="szamol()" >
+
+    <script>
+        function szamol() {
+            let oldal1 = Number(prompt("Adja meg az egyik befogót:"))
+            let oldal2 = Number(prompt("Adja meg a másik befogót:"))
+            alert("Összeg: " +  Math.sqrt(oldal1*oldal1 + oldal2*oldal2))
+        }
+    </script>
+</body>
+</html>
